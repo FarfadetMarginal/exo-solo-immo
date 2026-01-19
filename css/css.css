@@ -74,7 +74,7 @@ header ul li{
     display: contents;
 }
 
-header a:hover{
+header ul a:hover{
     color: #27697C;
     transform: scale(1.2);
 }
@@ -138,6 +138,7 @@ footer a:hover{
     background-size: cover;
     min-height: 700px;
     align-content: space-evenly;
+    background-position-y: 40%;
 }
 
 #s1 article{
@@ -256,7 +257,7 @@ width: fit-content;
 
 #s2d2 a{
 font-family: Roboto;
-font-weight: 500;
+font-weight: 400;
 font-size: 16px;
 line-height: 18px;
 text-align: center;
@@ -294,6 +295,10 @@ color: #276a7c;
 
     justify-self: center;
     padding-top: 30px;
+}
+
+#s3 article{
+    padding: 10px 20px;
 }
 
 
@@ -396,7 +401,7 @@ padding: 7px 0;
 
 #s3 a{
 font-family: Roboto;
-font-weight: 500;
+font-weight: 400;
 font-size: 16px;
 line-height: 18px;
 text-align: center;
@@ -423,4 +428,207 @@ background-color: #276a7c;
 #s3 article{
 
     padding: 10px 80px;
+}
+
+
+@media screen and (max-width :748px) {
+#s3di{
+    display: none;
+}
+#s3gd{
+    grid-template-columns: 1fr;
+}
+
+#s3 article{
+    padding: 10px 20px;
+}
+
+}
+
+
+#s4{
+    margin: auto;
+    max-width: 1440px;
+    padding: 120px 0;
+}
+
+#s4 div{
+    display: flex;
+    gap: 100px;
+    padding: 70px 15px
+}
+
+#s4 h2{
+font-family: "Montserrat";
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+color: #27697C;
+padding-bottom: 7px;
+}
+
+#s4 h3{
+font-family: "Montserrat";
+font-weight: 700;
+font-size: 30px;
+line-height: 34.5px;
+text-align: center;
+text-transform: uppercase;
+
+}
+
+#s4 img{
+    width: 100%;
+}
+
+#s4 a{
+    text-align: center;
+}
+
+#s4 a p{
+padding-top: 25px;
+font-family: "Open Sans";
+font-weight: 400;
+font-size: 16px;
+line-height: 18.4px;
+text-transform: uppercase;
+color: black;
+}
+
+#s4a1{
+font-family: Roboto;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+color: white;
+background-color: #27697C;
+padding: 13px 24px;
+display: block;
+width: fit-content;
+justify-self: center;
+
+
+}
+
+#s4a1:hover{
+background-color: white;    
+color: #276a7c;
+ transform: scale(1.1);
+ border-style: solid;
+ border-width: 1px;
+
+}
+
+#s5{
+    background-color: #859399;
+}
+
+#s5 form{
+
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    padding: 100px 15px;
+}
+
+#s5 h2{
+    font-family: "Montserrat";
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+color: white;
+padding-bottom: 5px;
+}
+
+#s5 h3{
+
+font-family: "Montserrat";
+font-weight: 700;
+font-size: 30px;
+line-height: 35px;
+text-transform: uppercase;
+color: white;
+padding-bottom: 50px;
+}
+
+#s5 button{
+font-family: Roboto;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+background-color: white;
+color: #27697C;
+padding: 13px 24px;
+display: block;
+width: fit-content;
+margin-top: 30px;
+border-color: #27697C;
+
+
+
+}
+
+#s5 button:hover{
+color: white;    
+background-color: #276a7c;
+ transform: scale(1.2);
+ border-style: solid;
+ border-width: 1px;
+
+}
+
+.s5d1 input, #s5>form>input{
+margin-bottom: 20px;
+    padding: 10px;
+}
+
+.s5d1{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+#boite1{
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+ 
+}
+
+#s5 textarea{
+    margin-bottom: 20px;
+}
+
+#s5 label{
+font-family: "Open Sans";
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+color: white;
+}
+
+@media screen and (max-width :748px) {
+#s4 div{
+    padding: 30px 15px;
+column-gap: 15px;
+}
+
+}
+
+#verslehaut{
+    position: fixed;
+    color: #27697C;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+    bottom : 10px;
+    right: 10px;
+}
+
+#verslehaut:hover{
+    transform:scale(1.3);
 }
