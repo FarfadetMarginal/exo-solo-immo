@@ -452,10 +452,52 @@ background-color: #276a7c;
     padding: 120px 0;
 }
 
-#s4 div{
+#s4 ul{
     display: flex;
     gap: 100px;
-    padding: 70px 15px
+    padding: 70px 15px;
+    list-style: none;
+      overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+#s4 ul::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#s4 ul::scroll-button(*):hover,
+#s4 ul::scroll-button(*):focus {
+  opacity: 1;
+}
+
+#s4 ul::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+#s4 ul::scroll-button(*):disabled {
+  opacity: 0.2;
+  cursor: unset;
+}
+
+#s4 ul::scroll-button(left) {
+  content: "☜";
+}
+
+#s4 ul::scroll-button(right) {
+  content: "☞";
+}
+
+#s4 ul::scroll-button(*) {
+  align-self: center;
+  
 }
 
 #s4 h2{
@@ -479,7 +521,7 @@ text-transform: uppercase;
 }
 
 #s4 img{
-    width: 100%;
+    max-width: 400px;
 }
 
 #s4 a{
