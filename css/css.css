@@ -367,6 +367,7 @@ margin: 40px 0 40px 0;
     
     object-fit: cover;
     min-height: -webkit-fill-available;
+ 
 }
 
 #s3 h2{
@@ -511,9 +512,7 @@ background-color: #276a7c;
     100% {
       transform: translateX(-100%);
     }
-    -100% {
-        transform: translateX(0);
-    }
+
   }
 
   #s4 ul li:hover{ 
@@ -521,6 +520,7 @@ background-color: #276a7c;
       animation-play-state: paused;
     }
 }
+
   
 
 #s4 h2{
